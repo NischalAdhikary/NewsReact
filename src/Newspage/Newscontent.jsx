@@ -5,6 +5,7 @@ import { useEffect} from 'react'
 import './Newscontnet.css'
 export default function Newscontent({searchTerm}) {
     const [datas,setData]=useState([])
+    const Apikey='your api  key'
     const[page,setpage]=useState(1)
     const[totalResult,setTotalresult]=useState(0)
     const pageSize=12;
@@ -19,7 +20,7 @@ export default function Newscontent({searchTerm}) {
   
         try {
           const response = await axios.get(
-              `https://newsapi.org/v2/everything?q=${query}&page=${page}&pageSize=${pageSize}&apiKey=cc41578833bc4e40b0945cc22f692e28`
+              `https://newsapi.org/v2/everything?q=${query}&page=${page}&pageSize=${pageSize}&apiKey=${Apikey}`
           );
   
           const articlesWithImages = response.data.articles.filter(
