@@ -1,0 +1,79 @@
+.Navbar-container{
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.Navbar-container .logo{
+    flex: 1;
+    font-size: 22px;
+    font-family: "Yeseva One", serif;
+    cursor: pointer;
+}
+.Navbar-container .inputs{
+    flex: 1;
+  display:flex;
+  gap: 5px;
+   justify-content: flex-end;
+    
+}
+.inputs input{
+    padding: 6px;
+    width: 40%;
+   
+}
+.inputs input:focus{
+    outline: none;
+}
+.inputs .btn{
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    font-size: 14px;
+    background-color: lightgreen;
+
+}
+@media (max-width:768px){
+
+    .Navbar-container{
+        padding: 0 20px;
+    }
+    .inputs input{
+        width: 60%;
+        padding: 8px;
+    }
+    .Navbar-container .logo{
+        font-size: 18px;
+    }
+    .inputs .btn{
+        display: none;
+    }
+}
+@media (max-width:480px){
+    .Navbar-container{
+        min-width: 430px;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    
+    }
+    .Navbar-container .logo{
+        font-size: 20px;
+        
+        margin-bottom: 10px;
+    }
+   .Navbar-container .inputs{
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+       
+    }
+    .inputs input{
+        width: 80%;
+    }
+}

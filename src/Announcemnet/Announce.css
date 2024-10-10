@@ -1,0 +1,27 @@
+.announce{
+    font-size:18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+height: 30px;
+justify-content: center;
+align-items: center;
+background-color: red;
+color: white;
+width: 100%;
+}
+@media (max-width: 768px) {
+    .announce {
+        
+        font-size: 16px; /* Adjust font size for tablets */
+        height: 40px;    /* Increase height for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .announce {
+        min-width: 430px;
+        font-size: 14px; /* Smaller font size for mobile */
+        height: auto;    /* Allow height to adjust based on content */
+        padding: 10px;   /* More padding for smaller screens */
+    }
+}
